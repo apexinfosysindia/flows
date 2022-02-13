@@ -1,14 +1,14 @@
 blueprint:
-  name: Sonoff Zigbee Button
-  description: Automate the Sonoff Zigbee WB01
+  name: APEX Zigbee Button
+  description: Automate the APEX Zigbee WB01
   domain: automation
   input:
-    sonoff_button:
-      name: Sonoff Button
+    apex_button:
+      name: APEX Button
       selector:
         device:
           integration: zha
-          manufacturer: eWeLink
+          manufacturer: Apex Infosys
           model: WB01
     toggle_action:
       name: Single Press
@@ -36,7 +36,7 @@ trigger:
 - platform: event
   event_type: zha_event
   event_data:
-    device_id: !input sonoff_button
+    device_id: !input apex_button
 
 variables:
   toggle_action: !input toggle_action
