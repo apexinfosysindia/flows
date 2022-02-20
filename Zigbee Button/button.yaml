@@ -3,7 +3,7 @@ blueprint:
   description: Automate the APEX Zigbee WB01
   domain: automation
   input:
-    apex_button:
+    sonoff_button:
       name: APEX Button
       selector:
         device:
@@ -36,7 +36,7 @@ trigger:
 - platform: event
   event_type: zha_event
   event_data:
-    device_id: !input apex_button
+    device_id: !input sonoff_button
 
 variables:
   toggle_action: !input toggle_action
