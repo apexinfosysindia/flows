@@ -9,6 +9,7 @@ blueprint:
       selector:
         entity:
           domain: binary_sensor
+          device_class: door
     friendly_name:
       name: Device Friendly Name
       description: What should we call the entity in the notification? (ie. Fridge)
