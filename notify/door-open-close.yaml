@@ -1,14 +1,6 @@
 blueprint:
-  name: Contact Sensor Left Open Notification
-  description: "Notifies you when a door or window is left open. 
-
-    For more information on setting the click url, please visit the companion docs:
-    https://companion.apexinfosys.in/docs/notifications/notifications-basic/#opening-a-url
-
-    If you'd like to notify multiple people, use a notify group: 
-    https://www.apexinfosys.in/integrations/notify.group/
-
-    "
+  name: Door Open/Close Notification
+  description: "Notifies you when a door or window is left open."
   domain: automation
   input:
     entity:
