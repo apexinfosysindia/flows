@@ -9,7 +9,7 @@ blueprint:
     AI-powered summaries for security camera events.
     Sends a notification with a preview to your phone that is updated dynamically when the AI summary is available.
   domain: automation
-  source_url: https://github.com/apexinfosysindia/flows/llmvision/blob/main/blueprints/event_summary.yaml
+  source_url: https://github.com/apexinfosysindia/flows/blob/main/llmvision/event_summary.yaml
   input:
     run_conditions:
       name: Run Conditions
