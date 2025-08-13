@@ -148,7 +148,7 @@ blueprint:
             condition:
         notify_device:
           name: Notify Device
-          description: The devices to send the notification to. Multiple devices may be used. Only works with Home Assistant mobile app.
+          description: The devices to send the notification to. Multiple devices may be used. Only works with Apex Connect mobile app.
           default: []
           selector:
             device:
@@ -203,7 +203,7 @@ blueprint:
         tap_navigate:
           name: Tap Navigate
           description: >-
-            Home Assistant dashboard to navigate to when notification is opened (e.g. /lovelace/cameras).
+            Apex Connect dashboard to navigate to when notification is opened (e.g. /lovelace/cameras).
           default: /lovelace/0
           selector:
             text:
@@ -299,9 +299,9 @@ blueprint:
           name: Custom Notification Channel or Alarm Mode - Android Only
           description: Create a new channel for notifications to allow custom notification
             sounds, vibration patterns, and override Do Not Disturb mode. Camera Name uses first Camera Entity if using multiple cameras. Configured
-            directly on the Android device -> Home Assistant App Setting -> Notifications.
+            directly on the Android device -> Apex Connect App Setting -> Notifications.
             Use `Alarm` to use the device's loud alarm notification sound. You can also type in your own channel name.
-            [Learn More](https://companion.home-assistant.io/docs/notifications/notification-commands/#volume-level)
+            [Learn More](https://companion.apexinfosys.in/docs/notifications/notification-commands/#volume-level)
             (default = Camera Name == {{ camera_entity_snapshot }} Snapshot). 
           default: '{{ camera }} Snapshot'
           selector:
@@ -342,8 +342,8 @@ blueprint:
         notification_sound:
           name: Notification Sound - iOS Only
           description: 'You can specify a sound file on your device that will play
-            for the notifications. You can import the sound file into Home Assistant
-            or enter the filename of the [pre-installed notification sound](https://companion.home-assistant.io/docs/notifications/notification-sounds/#pre-installed-notification-sounds)
+            for the notifications. You can import the sound file into Apex Connect
+            or enter the filename of the [pre-installed notification sound](https://companion.apexinfosys.in/docs/notifications/notification-sounds/#pre-installed-notification-sounds)
             (example: US-EN-Alexa-Motion-Detected-Generic.wav).'
           default: default
           selector:
