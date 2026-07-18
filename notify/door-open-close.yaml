@@ -75,7 +75,7 @@ blueprint:
             - fridge-alert
             - home
             - home-alert
-            - home-assistant
+            - apexos
     notification_color:
       name: Notification Color (Android Only)
       description: The color of the notification.
