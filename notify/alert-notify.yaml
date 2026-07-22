@@ -115,7 +115,7 @@ trigger:
   - platform: state
     entity_id: !input sensor_entity
     to: !input alert_state
-  - platform: homeassistant
+  - platform: apexos
     event: start
 
 condition:

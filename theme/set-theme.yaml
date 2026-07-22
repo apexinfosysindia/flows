@@ -28,7 +28,7 @@ blueprint:
 mode: "single"
 
 trigger:
-  - platform: "homeassistant"
+  - platform: "apexos"
     event: "start"
   - platform: "event"
     event_type: "automation_reload"
